@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<!-- saved from css  -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>邝玲博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    body{background-color:#e0dfdf;}
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.bootcss.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+ <!--   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/img/favicon144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/img/favicon114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/img/favicon72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="/static/img/favicon57x57.png">  -->
+    <link rel="shortcut icon" href="/static/img/favicon32x32.png"> 
+
+ <!-- <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style><link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"> -->
+  
+  </script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>  
+
+  <body onLoad="MM_preloadImages('http://devops.orshsoft.com.cn:7000/static/img/apple.png','http://devops.orshsoft.com.cn:7000/static/img/tomcat.png','http://devops.orshsoft.com.cn:7000/static/img/mongodb.png','http://devops.orshsoft.com.cn:7000/static/img/zabbix.png')" screen_capture_injected="true"> 
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <!--div class="container"-->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Kuangl's Blog</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                 <li class="active"><a href="#"><b>首页</b></a></li> 
+                 <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>过去</b><b class="caret"></b></a>
+                  <!--  <li><a href="#"><b>过去</b></a></li> -->  
+                   <ul class="dropdown-menu">
+                  <li><a href="#">系统架构</a></li>
+                  <li><a href="#">集群管理</a></li>
+                  <li><a href="#">WEB服务</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">系统监控</li>
+                  <li><a href="#">Zabbix</a></li>
+                  <li><a href="#">Cacti</a></li>
+                  <li><a href="#">Nagios</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">缓存</li>
+                  <li><a href="#">Squid</a></li>
+                  <li><a href="#">Varnish</a></li>
+                </ul>
+              </li>
+                 
+                   <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>未来</b><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">自动化运维平台</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">自动化运维工具</li>
+                  <li><a href="#">Saltstack</a></li>
+                  <li><a href="#">Puppet</a></li>
+                  <li><a href="#">Cobbler</a></li>
+                  <li><a href="#">Rpmbulid</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">编程语言</li>
+                  <li><a href="#">Shell</a></li>
+                  <li><a href="#">Python</a></li>
+                </ul>
+              </li>  
+            <!--    <li><a href="http://www.bootcss.com/examples/carousel.html#contact"><b>未来</b></a></li> -->
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>梦想</b><b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                  <li><a href="#">管理</a></li>
+                  <li><a href="#">创造</a></li>
+                  <li><a href="#">追求</a></li>
+                </ul>
+
+                 </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>生活</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">旅游</a></li>
+                  <li><a href="#">摄影</a></li>
+                  <li><a href="#">摔跤</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>博客</b><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://kling.blog.51cto.com/" target="_blank">51cto</a></li>
+                  <li><a href="https://github.com/kuangling" target="_blank">github</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>微博</b><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://weibo.com/kuangl2013" target="_blank">新浪</a></li>
+                  <li><a href="http://1.t.qq.com/kl404060945" target="_blank">腾讯</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>关于</b></a>
+             </li>
+             <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>联系</b></a>
+             </li>
+           
+             <li><a href="#">  </a> </li>
+             <li><a href="#">  </a> </li>
+             <li><a href="#">  </a> </li>
+             <li><a href="#">  </a> </li>
+             <li><a href="#">  </a> </li>
+
+             <li class="dropdown">
+            <!-- <a href="#" onClick="addfavorite()"><b>收藏</b></a> -->
+           <!-- <a href="javascript:window.external.AddFavorite('http://devops.orshsoft.com.cn:8000/index/', '邝玲博客')">收藏</a> -->
+            <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">收藏</a>
+            <script type="text/javascript" language="javascript">
+             function AddFavorite(sURL, sTitle) {
+            sURL = encodeURI(sURL); 
+            try{   
+            window.external.addFavorite(sURL, sTitle);   
+            }
+            catch(e) {   
+            try{   
+                 window.sidebar.addPanel(sTitle, sURL, "");   
+            }
+            catch (e) {   
+                alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置."); 
+            }   
+        }
+    }
+           </script>
+             </li>
+              </li>
+
+        <!--      <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>   -->
+
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+       </div>
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+     <!--   <div class="item">
+         <img src="/static/img/slide-03.png" alt="">
+          <div class="container">
+            <div class="carousel-caption" align="right">
+             <h1>我的梦想</h1>
+              <p class="lead">曾经，觉得它不是我理想的，现在，觉得它却是我的梦想，这个梦想，让我有了依托；不懈地追逐着梦想，觉  意义深远，趣味无穷，才能将生命的潜能发挥到极致，虽然现>实生活中，不是所>有的梦想都能成功，但每一个梦想都是绚烂多多姿，每一个人都因追逐梦想而生活得更加精彩。</p>
+             <a class="btn btn-large btn-primary" href="#">了解更多</a>  
+            </div>
+          </div>
+        </div> -->   
+        <div class="item active">
+          <img src="/static/img/slide-01.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>个人博客</h1>
+               <p class="lead"><h7>我是邝玲，IT菇凉，梦想着成为一名优秀的系统架构师。</h7></p>
+             <p>曾经，我表示怀疑自己，可是那只是曾经；现在，我就像刚升起的太阳，努力的去实现自己的梦想。</p>
+            <!--  <a class="btn btn-large btn-primary" href="#">了解更多</a> -->
+            </div>
+          <p> </p> 
+        <p style="padding-left:20px;"><a href="#myModal" role="button" class="btn btn-large btn-primary" data-toggle="modal">了解更多</a></p>
+       </div>
+       </div>
+        </div>
+         <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+         <h3 id="myModalLabel">详细资料</h3>
+         </div>
+         <div class="modal-body">
+         <p>&emsp;&emsp;关于了解更多这个弹出层，我一直在想放什么资料;</p>
+         <p>&emsp;&emsp;关于我的故事很多，关于过去和未来的话题,也一直没有从我身边离开过;</p>
+         <p>&emsp;&emsp;我本来是一名专业运动员，但是后来又学了计算机;</p>
+         <p>&emsp;&emsp;我本来是要当老师，后来又做了运维;</p>
+         <p>&emsp;&emsp;我有着天性好强的性格，却总是被某种竞争的压力催促着前进;</p>
+         <p>&emsp;&emsp;我的文笔很烂，却现在开设自己的独立博客，书写自己的技术博客人生...</p>
+         <p>&emsp;&emsp;跟很多朋友一样，怀着一个不大不小的梦想，默默前进;</p>
+         <p>&emsp;&emsp;尽管关乎未来，有很多的不确定，也有各种身不由己;</p>
+         <p>&emsp;&emsp;但是我还是会怀着最原始的梦想，一步一步默默的前进;</p>
+         <p>&emsp;&emsp;我没有任何码，但是我确信努力无价;</p>
+         <p>&emsp;&emsp;年轻的我有理由相信青春无极限;</p>
+         <p>&emsp;&emsp;未来的我肯定会感谢现在努力的我。</p> 
+        </div>
+         <div class="modal-footer">
+         <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+         </div>
+       </div>
+      <!--  <div class="item">
+          <img src="/static/img/slide-02.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>我的未来</h1>
+               <p class="lead"> 以前，我试着问我自己，如果看不到确定的未来，还要不要付出。现在，我只能说，并不是每一种付出都是在追寻结果。有时在付出的路上，能够收获的，是清楚的看到了己想要的，>或者不想要的，这又何尝不是一种宝贵的结果。命运会厚待温柔多情的人，好过冷漠的一颗心。</p>
+              <a class="btn btn-large btn-primary" href="#">了解更多</a>
+            </div>
+          </div>
+        </div>  -->
+      </div>
+<!--      <a class="left carousel-control" href="http://www.bootcss.com/examples/carousel.html#myCarousel data-slide="prev">‹</a>
+      <a class="right carousel-control" href="http://www.bootcss.com/examples/carousel.html#myCarousel" data-slide="next">›</a>  -->
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px; " src="/static/img/zhong02.png">
+          <h2>未来</h2>
+          <p>以前，我试着问我自己，如果看不到确定的未来，还要不要付出。现在，我只能说，并不是每一种付出都是在追寻结果。有时在付出的路上，能够收获的，是清楚的看到了自己想要的，>或者不想要的，这又何尝不是一种宝贵的结果。命运会厚待温柔多情的人，好过冷漠的一颗心。</p>
+       <!--   <p><a class="btn" href="#">更多 »</a></p>   -->
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px; " src="/static/img/zhong01.png">
+          <h2>梦想</h2>
+          <p>曾经，觉得它不是我理想的，现在，觉得它却是我的梦想，梦想，让我有了依托；不懈地追逐着梦想，觉得意义深远，趣味无穷，才能将生命的潜能发挥到极致，虽然现实生活中，不是所有的梦想都能成功，但每个梦想都是绚烂多多姿，每一个人都因追逐梦想而生活得更加精彩。</p>
+       <!--   <p><a class="btn" href="#">更多 »</a></p>  -->
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px; " src="/static/img/zhong03.png">
+          <h2>生活</h2>
+          <p>我想，给灵魂放一个假期，脱离现实的繁杂与压力，回归最本真的自己，体验精美；我想，给生命一次洗礼，超乎尘世的情理与本象，回归最纯洁的自己，品味清净；我想，给心灵做一次精美旅行  放飞所有的包袱与束缚，回归最简单的自己，放逐自由。我想，这就是我要的生活。</p>
+       <!--   <p><a class="btn" href="#">更多 »</a></p>  -->
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+   <!--   <div class="featurette">
+        <img class="featurette-image pull-right"  src="/static/img/guo02.png">
+        <h2 class="featurette-heading">工作  <span class="muted">很喜欢画系统架构图.</span> </h2> 
+        <p class="lead">其实，我的工作，我真的很喜欢，各式各样，丰富多彩，右图是一应用架构图可以反映在各个视图里面，需要理解用户需求及业务流程，一个架构图能够反应出一个人的逻辑思维能力。</p>
+      </div> -->
+    
+      <!-- 运维工作 -->
+        <section id="photography" class="row">
+    <!--    <div class="span12 panel" style="display: block;">  -->
+        <div class="span12 panel" style="height: 520px;">
+        <div class="row">
+         <div class="span8">
+          <div id="photograph" class="carousel slide">
+           <ol class="carousel-indicators">
+           <li data-target="#photograph" data-slide-to="0" class=""> </li>
+           <li data-target="#photograph" data-slide-to="1" class="active"></li>
+           <li data-target="#photograph" data-slide-to="2" class=""></li>
+           <li data-target="#photograph" data-slide-to="3" class=""></li>
+           <li data-target="#photograph" data-slide-to="4" class=""></li>
+           <li data-target="#photograph" data-slide-to="5" class=""></li>
+           <li data-target="#photograph" data-slide-to="6" class=""></li>
+           </ol>
+           <!-- Carousel items -->
+           <div class="carousel-inner">
+           <div class="item"><a href="#" title="宁静的午后" target="_blank"><img src="/static/img/sh01.png"></a></div>
+           <div class="item active"><a href="#" title="喜欢摄影" target="_blank"><img src="/static/img/sh02.png"></a></div>
+           <div class="item"><a href="#" title="静心" target="_blank"><img src="/static/img/sh03.png"></a></div>
+           <div class="item"><a href="#" title="下一辆车" target="_blank"><img src="/static/img/sh04.png"></a></div>
+           <div class="item"><a href="#" title="车道" target="_blank"><img src="/static/img/sh06.png"></a></div>
+           <div class="item"><a href="#" title="品味生活" target="_blank"><img src="/static/img/sh05.png"></a></div>
+           <div class="item"><a href="#" title="我是超人" target="_blank"><img src="/static/img/sh07.png"></a></div>
+         </div>
+           <a class="carousel-control left" href="#photograph" data-slide="prev">‹</a>
+           <a class="carousel-control right" href="#photograph" data-slide="next">›</a>
+        </div>
+          </div>
+            <div class="span4">
+             <h2>静心小悟</h2>
+          <div class="accordion" id="accordion-447642">
+           <div class="accordion-group">
+             <div class="accordion-heading"><a class="accordion-toggle" contenteditable="true" data-parent="#accordion-447642" data-toggle="collapse" href="#accordion-element-715695"><h4>坚持学习</h4></a></div>
+
+          <div class="accordion-body collapse in" id="accordion-element-715695">
+           <div class="accordion-inner" contenteditable="true">一个人一天的行为中大约有５%是属于非习惯性的，而剩下的９５%的行为都是习惯性的。当花一段时间把你的学习计划变成自己的习惯之后，你就会发现自己离目标越来越近。我想，喜欢看书的女孩，她一定是沉静且有着很好的心态，一定是出口成章且优雅知性的女人。</div>
+            </div>
+           </div>
+
+         <div class="accordion-group">
+          <div class="accordion-heading"><a class="accordion-toggle" contenteditable="true" data-parent="#accordion-447642" data-toggle="collapse" href="#accordion-element-393782"><h4>拥有品位</h4></a></div>
+         <div class="accordion-body collapse" id="accordion-element-393782">
+          <div class="accordion-inner" contenteditable="true">品味是一个人去观察事物时的态度，同样的东西，不同的人眼光下会出现着不同的版本。在某些程度上，一个人的品味与她的气质是相辅相成，品位的高低取决于一个女孩在日常生活里对新事物的发现；同时，拥有品位，才会拥有好的生活。</div>
+          </div>
+          </div>
+       
+        <div class="accordion-group">
+          <div class="accordion-heading"><a class="accordion-toggle" contenteditable="true" data-parent="#accordion-447642" data-toggle="collapse" href="#accordion-element-393783"><h4>学会宽容</h4></a></div>
+         <div class="accordion-body collapse" id="accordion-element-393783">         
+         <div class="accordion-inner" contenteditable="true"> 因为可能有些时候就因为你的计较会让你失去自尊，成为被人指责的没有教养的女人。给那些不友好的人善意的微笑，即能够让对方无地自容，也能够给别人留下大度且善解人意的好印象。忍耐并不是懦弱，也不是伤自尊，而是宽容美。 </div>
+          </div>
+          </div>
+         
+        <div class="accordion-group">
+          <div class="accordion-heading"><a class="accordion-toggle" contenteditable="true" data-parent="#accordion-447642" data-toggle="collapse" href="#accordion-element-393784"><h4>重视身体</h4></a></div>         
+         <div class="accordion-body collapse" id="accordion-element-393784">          
+         <div class="accordion-inner" contenteditable="true"> 其实在忙，都要注意身体，但是真的做起来，并不是一件简单的事情。越是忙碌，越要学会休息。不妨给自己定个休息时间表，除了工作、进餐和睡眠以外,充分利用工间短短的时间到室外活动，或做深呼吸，欣赏音乐，使身心得以放松。此外，周末进行一次身体休整,放松一下紧绷的神经,为下周的工作打好基础。
+  </div>
+          </div>
+          </div>
+        </div>
+          <a href="#" target="_blank" class="btn btn-info btn-large button">发现生活里的美</a>
+        </div>
+         </div>
+	  </div>
+    </section>
+
+      <hr class="featurette-divider">
+
+<!--     <hr class="featurette-divider">
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="/static/img/shenghuo01.png">
+        <h2 class="featurette-heading">生活  <span class="muted"><u>Life.</u></span>  </h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div> -->
+
+      <article id="web_solutions">
+	<hgroup>
+		<h2><span>Linux运维介绍</h2>
+		<h3>Linux 运维需要掌握的业务技能 </h3>
+	</hgroup>
+        <h5>1. 需要掌握linux网络基础知识 </h5>
+	<h5>2. 需要掌握web服务架构的掌握 </h5>
+	<h5>3. 需要掌握编程自动化 </h5>
+	<h5>4. 需要掌握缓存优化系统 </h5>
+	<h5>5. 需要掌握监控日志系统 </h5>
+	<h5>6. 需要掌握数据库的管理 </h5>
+	<div class="find_out_more">
+        <p> 虽然我是个姑娘，虽然这个工作并不不适合女孩子，但是我觉得很适合我;</p>
+        <p> 运维工作真的是一件非常具有挑战性的工作，你需要付出比平常人更多的精力和时间;</p>
+        <p> 当然你也会有很多的收获，在知识广度上的扩充和积累是绝对非常迅速的;</p>
+        <p> 不论成就感还是挫折感都能在这里体味的淋漓尽致。</p>
+        <p class="more"><a href="#">更多</a></p>
+	</div>
+</article>
+
+
+      <ul class="thumbnails portfolio">
+       <li class="span3"><div class="thumbnail"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','http://devops.orshsoft.com.cn:7000/static/img/apple.png',1)"><img src="http://devops.orshsoft.com.cn:7000/static/img/linux.png" alt="system" name="Image15" width="250" height="165" border="0"></a>
+        <h5>操作系统</h5><h6>Linux、Windows、Mac OS</h6></div></li>
+      <li class="span3">
+      <div class="thumbnail"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','http://devops.orshsoft.com.cn:7000/static/img/tomcat.png',1)"><img src="http://devops.orshsoft.com.cn:7000/static/img/apache.png" alt="web" name="Image16" width="250" height="165" border="0"></a>
+        <h5>Web 服务</h5><h6>Apache、Ningx、Tomcat</h6></div></li>
+      <li class="span3">
+      <div class="thumbnail"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','http://devops.orshsoft.com.cn:7000/static/img/mongodb.png',1)"><img src="http://devops.orshsoft.com.cn:7000/static/img/mysql.png" alt="mysql" name="Image17" width="250" height="165" border="0"></a>
+        <h5>数据库</h5><h6>Oracle、MySQL、Mongodb</h6></div></li>
+      <li class="span3">
+      <div class="thumbnail"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','http://devops.orshsoft.com.cn:7000/static/img/nagios.png',1)"><img src="http://devops.orshsoft.com.cn:7000/static/img/zabbix.png" alt="zabbix" name="Image18" width="250" height="165" border="0"></a>
+<h5>监控</h5><h6>Zabbix、Nigos、Cacti</h6></div></li></ul>
+
+
+
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+      <!-- FOOTER -->
+    <!--hr class="soften"> -->
+       <center> 很感谢朋友们对我的支持，博客一直在更新中... <p class="pull-right"><a href="#">返回顶部</a></p> </center>
+       <center> Copyright © 2013 Ling Kuang. All Rights Reserved </center>
+       <center> <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    bShare.addEntry({
+    title: "邝玲的博客",
+    url: "www.kuangl.com",
+    summary: "个人博客陆陆续续在改进中，以集中展示我的最新技术知识和自己学习中成长经历，这是我blog第一个版本，还希望大家多多支持!",
+    pic: ""
+    });</script>
+    </center>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="/static/js/holder.js"></script>
+  
+
+</body></html>
